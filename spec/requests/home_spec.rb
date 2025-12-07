@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe "Home", type: :request do
+RSpec.describe "Home" do
   describe "GET /" do
     it "returns http success" do
       get "/"

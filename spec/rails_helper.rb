@@ -10,9 +10,9 @@ require 'rspec/rails'
 require 'factory_bot_rails'
 require 'shoulda/matchers'
 
-Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].sort.each { |f| require f }
-Dir["#{File.dirname(__FILE__)}/helpers/**/*.rb"].sort.each { |f| require f }
-Dir["#{File.dirname(__FILE__)}../app/helpers/**/*.rb"].sort.each { |f| require f }
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+Dir["#{File.dirname(__FILE__)}/helpers/**/*.rb"].each { |f| require f }
+Dir["#{File.dirname(__FILE__)}../app/helpers/**/*.rb"].each { |f| require f }
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
@@ -33,15 +33,15 @@ RSpec.configure do |config|
     DatabaseCleaner.clean_with(:truncation)
   end
 
-  config.before(:each) do
+  config.before do
     DatabaseCleaner.strategy = :transaction
   end
 
-  config.before(:each) do |_example|
+  config.before do |_example|
     DatabaseCleaner.start
   end
 
-  config.after(:each) do
+  config.after do
     DatabaseCleaner.clean
   end
 end

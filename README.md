@@ -5,8 +5,8 @@ It uses Vite for faster development of the Frontend.
 
 Backend
 ```
-ruby 3.4.2
-rails 8.0.2
+ruby 3.4.4
+rails 8.0.4
 postgresql
 ```
 
@@ -19,8 +19,8 @@ Vite
 ##  Getting started
 Replace every occurrence of `change_me`, `CHANGE_ME`, `ChangeMe` with the app name you plan to use. Respect the case and the format so that ENV variables and configs are set correctly.
 
-Environment variables are stored in `.env`. A sample file was provided, run `mv .env.sample .env` to rename it so `rails-dotenv` can read them in runtime.
-Then do the same for `database.yml` with: `mv config/database.yml.sample  config/database.yml`.
+Environment variables are stored in `.env`. A sample file was provided, run `cp .env.sample .env` to rename it so `rails-dotenv` can read them in runtime.
+Then do the same for `database.yml` with: `cp config/database.yml.sample  config/database.yml`.
 
 Run `touch config/master.key | rails secret` to create a `master.key`.
 

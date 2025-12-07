@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.4.2"
+ruby "3.4.4"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.0", ">= 8.0.2"
@@ -39,7 +39,6 @@ end
 
 group :test do
   gem 'database_cleaner-active_record', '>= 2.2.0'
-  gem "rspec-rails"
   gem 'shoulda-matchers', require: false
   gem 'simplecov'
 end

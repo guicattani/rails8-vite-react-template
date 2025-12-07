@@ -1,5 +1,5 @@
 FROM node:18
-FROM ruby:3.4.2
+FROM ruby:3.4.4
 
 # Create app directory
 WORKDIR /usr/src/app
