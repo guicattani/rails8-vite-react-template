@@ -12,7 +12,7 @@ require 'shoulda/matchers'
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 Dir["#{File.dirname(__FILE__)}/helpers/**/*.rb"].each { |f| require f }
-Dir["#{File.dirname(__FILE__)}../app/helpers/**/*.rb"].each { |f| require f }
+Dir["#{File.dirname(__FILE__)}/../app/helpers/**/*.rb"].each { |f| require f }
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
