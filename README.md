@@ -22,7 +22,7 @@ Replace every occurrence of `change_me`, `CHANGE_ME`, `ChangeMe` with the app na
 Environment variables are stored in `.env`. A sample file was provided, run `cp .env.sample .env` to rename it so `rails-dotenv` can read them in runtime.
 Then do the same for `database.yml` with: `cp config/database.yml.sample  config/database.yml`.
 
-Run `touch config/master.key | rails secret` to create a `master.key`.
+Run `bundle exec rails credentials:edit` to create a `master.key`.
 
 
 ## Setup dependencies
